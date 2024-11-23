@@ -1,0 +1,59 @@
+.swal2-styled {
+  box-shadow: none;
+  background-size: 180% 100% !important;
+  transition: all .4s ease-in-out !important;
+  -o-transition: all .4s ease-in-out !important;
+  -webkit-transition: all .4s ease-in-out !important;
+  -moz-transition: all .4s ease-in-out !important;
+  -ms-transition: all .4s ease-in-out !important;
+  min-width: 100px !important;
+
+  &:hover {
+    background-image: unset !important;
+  }
+
+  &.swal2-confirm {
+    color: var(--whiteColor) !important;
+    background-image: var(--gradient-theme) !important;
+    box-shadow: none !important;
+
+    &:hover {
+      color: var(--whiteColor) !important;
+      background-image: var(--gradient-theme) !important;
+      box-shadow: 0 5px 15px -4px var(--themeColor) !important;
+    }
+  }
+
+  &.swal2-cancel {
+    color: var(--whiteColor) !important;
+    background: linear-gradient(to right, #2d3641db, #000000db) !important;
+    box-shadow: none !important;
+
+    &:hover {
+      background: linear-gradient(to right, #2d3641db, #000000db) !important;
+      box-shadow: 0 5px 15px -4px hsla(210, 22%, 4%, 0.75) !important;
+    }
+  }
+}
+div:where(.swal2-icon).swal2-question{
+  border-color: var(--warningColor) !important;
+  color: var(--warningColor) !important;
+}
+
+.swal-icon{
+  border: 0;
+  width: 100px;
+}
+
+@media only screen and (max-width: 1750px) {
+  .swal2-styled{
+    height: 37px;
+  }
+}
+
+.swal2-actions{
+  button{
+    font-size: var(--commonFont-large);
+    height: auto !important;
+  }
+}
